@@ -8,5 +8,5 @@ public record CrearUsuarioDTO(@Email
                               @Length(max = 40)
                               String email,
                               @NotBlank
-                              @Length(min = 5)
+                              @Length(min = 5, max = 255)
                               String contrasenia) {}

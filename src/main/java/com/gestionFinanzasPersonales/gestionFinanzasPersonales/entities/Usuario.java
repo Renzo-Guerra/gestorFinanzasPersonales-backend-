@@ -22,7 +22,7 @@ public class Usuario {
     String email;
 
     @NotBlank
-    @Length(min = 5)
+    @Length(min = 5, max = 255)
     String contrasenia;
 
     public Usuario(String email, String contrasenia){
