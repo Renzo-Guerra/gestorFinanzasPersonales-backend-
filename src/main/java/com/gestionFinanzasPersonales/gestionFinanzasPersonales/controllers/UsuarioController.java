@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.*;
 public class UsuarioController {
     private final UsuarioService usuarioService;
     @PostMapping
-    public ResponseEntity<Usuario> crearUsuario(@Valid @RequestBody CrearUsuarioDTO data) throws Exception {
+    public ResponseEntity<Usuario> crearUsuario(@Valid @RequestBody CrearUsuarioDTO data) {
         return new ResponseEntity<>(this.usuarioService.crearUsuario(data), HttpStatus.CREATED);
     }
 
